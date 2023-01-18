@@ -1,2 +1,7 @@
 node_modules/
 .env
+
+# storyboard frontend
+storyboard/frontend/node_modules/
+storyboard/frontend/.cache/
+storyboard/frontend/public

@@ -29,14 +29,29 @@ const generateScript = async (userPrompt, mock) => {
       };
       const response = await generateText(prompt, config);
 
-      console.log("response: ", response);
+      // console.log("response: ", response);
 
       const cleanedResponse = response.replace(/\n/g, "");
-      console.log("//////", cleanedResponse);
 
       // const stringifiedResponse = await JSON.stringify(response);
       // console.log("stringifyResponse", stringifiedResponse);
-      const parsedResponse = await JSON.parse(cleanedResponse);
+
+      // Thank you ChatGPT ––– removing trailing comma from JSON
+      const parsedResponse = JSON.parse(cleanedResponse, (key, value) => {
+        if (
+          value &&
+          typeof value === "object" &&
+          value.constructor === Object
+        ) {
+          Object.keys(value).forEach((k) => {
+            if (!value[k]) {
+              delete value[k];
+            }
+          });
+        }
+        return value;
+      });
+      // const parsedResponse = await JSON.parse(cleanedResponse);
       // console.log("parsedResponse", parsedResponse);
 
       return parsedResponse;

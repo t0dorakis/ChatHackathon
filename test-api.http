@@ -22,7 +22,7 @@ content-type: application/json
 
 ###
 
-GET http://localhost:3000/create-story-board
+POST http://localhost:3000/create-story-board
 content-type: application/json
 
 {

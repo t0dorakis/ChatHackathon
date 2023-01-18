@@ -1,39 +1,78 @@
-{
+
+
+  {
     "characters": [
         {
-        "name": "Sowet Citizen",
-        "visualDescription": "A person in urban clothing living in Sowet. Wears a suit and has an afro cap."
+            "name": "John",
+            "visualDescription": "A young man, somewhat scrawny and of average height, with short, light brown hair and a thick beard."
         },
         {
-        "name": "Dinosaur",
-        "visualDescription": "A large dinosaur with horns and a lizard-like tail"
-        }
+            "name": "Jennifer",
+            "visualDescription": "A woman in her late twenties, average height with long red hair and light blue eyes."
+        },
+        {
+            "name": "Andy",
+            "visualDescription": "An old man with a graying beard and a balding head. He has a kind face and a knack for looking out for others."
+        },
+        {
+            "name": "Dinosaurs",
+            "visualDescription": "Vast, ferocious, pre-historic monsters"
+        },
     ],
-    "mood": "Tense, Danger, Unexpected, Excitement",
+    "mood": "Tense, Dark, Unsettling",
     "scenes": [
         {
-            "scene": "Sowet City",
-            "camera": "A fixed panoramic view of Sowet City.",
-            "plot": "The calm and peaceful Sowet City in the 70s gets suddenly invaded by a giant dinosaur",
-            "characters": ["Sowet Citizen"]
+            "scene": "The city at night, a blanket of darkness covering the land",
+            "camera": "Low-angle, desaturated color-grading",
+            "plot": "The city is calm, but there is a sense of uneasiness in the air",
+            "characters": [
+                "John",
+                "Jennifer",
+                "Andy"
+            ]
         },
         {
-            "scene": "Dinosaur Invasion",
-            "camera": "A close-up of the dinosaur rampaging through the city.",
-            "plot": "The citizens of Sowet City panic as they try to flee from the giant creature.",
-            "characters": ["Sowet Citizen", "Dinosaur"]
+            "scene": "John, Jennifer, and Andy walk home through the deserted streets",
+            "camera": "Follow-cam, focusing on the characters in the foreground, the cityscape in all its unnerving darkness in the background",
+            "plot": "John, Jennifer and Andy trudge through the streets, a sense of dread only heightening with each step",
+            "characters": [
+                "John",
+                "Jennifer",
+                "Andy"
+            ]
         },
         {
-            "scene": "Escape",
-            "camera": "The camera follows a group of citizens as they climb up a ladder to the rooftop.",
-            "plot": "The group of citizens rush up to the top of a building in an attempt to escape from the dinosaur.",
-            "characters": ["Sowet Citizen"]
+            "scene": "Suddenly, a loud roar pierces the night sky as hundreds of prehistoric dinosaurs invade the city",
+            "camera": "Shot from above, displaying the chaos that ensues",
+            "plot": "John, Jennifer, and Andy stand in stunned silence as the dinosaurs run amok, the sheer terror of the situation paralyzing them",
+            "characters": [
+                "John",
+                "Jennifer",
+                "Andy",
+                "Dinosaurs"
+            ]
         },
         {
-            "scene": "Safe",
-            "camera": "The camera focuses on the group of citizens as they watch the dinosaur from the rooftop.",
-            "plot": "The group of citizens cheer as the dinosaur moves away from the city.",
-            "characters": ["Sowet Citizen"]
+            "scene": "The scene changes to one of the city's parks",
+            "camera": "Wide shot to emphasize the smallness of the humans amongst the giants monsters",
+            "plot": "John, Jennifer and Andy, still in shock, slowly make their way through the park, trying to avoid the wrath of the dinosaurs",
+            "characters": [
+                "John",
+                "Jennifer",
+                "Andy",
+                "Dinosaurs"
+            ]
+        },
+        {
+            "scene": "John leads the group away from the park, hoping to find a safe haven",
+            "camera": "Follow-cam, focusing on the characters as they run away in fear",
+            "plot": "The dinosaurs relentlessly follow in pursuit, as John, Jennifer and Andy run for their lives",
+            "characters": [
+                "John",
+                "Jennifer",
+                "Andy",
+                "Dinosaurs"
+            ]
         }
     ]
 }

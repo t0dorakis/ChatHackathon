@@ -1,5 +1,6 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors");
 require("dotenv").config();
 const { listEngines, generateImage, generateText } = require("./mw-open-ai");
 const { generateStoryBoard } = require("./storyboard/generateStoryBoard");
@@ -7,6 +8,14 @@ const { generateStoryBoard } = require("./storyboard/generateStoryBoard");
 const app = express();
 
 app.use(express.json()); // middleware to parse JSON body
+
+const corsOpts = {
+  origin: "*",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+};
+
+app.use(cors(corsOpts));
 
 app.get("/create-image", async (req, res) => {
   console.log("create-image request", req.body);
@@ -30,10 +39,10 @@ app.get("/complete-text", async (req, res) => {
   }
 });
 
-app.get("/create-story-board", async (req, res) => {
+app.post("/create-story-board", async (req, res) => {
   console.log("createStoryBoard request", req.body);
   try {
-    const { prompt, mock } = req.body;
+    const { prompt, mock = false } = req.body;
     const response = await generateStoryBoard(prompt, mock);
     res.send(response);
   } catch (err) {
