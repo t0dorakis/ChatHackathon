@@ -33,14 +33,13 @@ const generateImage = async (
 
 const generateText = async (
   prompt = "a white siamese cat",
+  config = { temperature: 1.0, max_tokens: 100, model: "text-davinci-002" }
 ) => {
-  console.log("Generating text ...")
+  console.log("Generating text ...");
   try {
     const response = await openai.createCompletion({
-      model: "text-davinci-002",
       prompt: prompt,
-      temperature: 1.0,
-      max_tokens: 100,
+      ...config,
     });
     const text = response.data.choices[0].text;
     return text;

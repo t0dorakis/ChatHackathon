@@ -19,3 +19,13 @@ content-type: application/json
 {
     "prompt": "A story about a fish learing to walk"
 }
+
+###
+
+GET http://localhost:3000/create-story-board
+content-type: application/json
+
+{
+    "prompt": "Write a screenplay about a sowjet city in the 70s which get invaded by dinosaurs.",
+    "mock": false
+}

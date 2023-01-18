@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "story-test": "node storyboard/story.test.js"
+    "story-test": "node ---watch storyboard/story.test.js",
+    "lint": " eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "openai": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0"
   }
 }
