@@ -8,15 +8,17 @@ Everything shall be in JSON format, following the schema:
 
 
 {
-    "Characters": {
-     Character: "visual description of the character"
-    },
-    "Mood": ...,
-    "Scenes": [
+    "characters": [{
+        "name": ...,
+        "visualDescription": ...  
+    }],
+    "mood": ...,
+    "scenes": [
         {
-            "Scene": ...,
-            "Camera": ...,
-            "Plot": ...
+            "scene": ...,
+            "camera": ...,
+            "plot": ...,
+            "characters": [...]
         },
     ]
 }

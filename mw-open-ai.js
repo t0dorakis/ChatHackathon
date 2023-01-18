@@ -17,7 +17,7 @@ const generateImage = async (
   pixel = 256,
   number = 1
 ) => {
-  console.log("Generating image ...")
+  console.log("Generating image with prompt: ", prompt)
   try {
     const response = await openai.createImage({
       prompt: prompt,
