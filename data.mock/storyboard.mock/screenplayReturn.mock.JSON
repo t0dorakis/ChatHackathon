@@ -1,30 +1,51 @@
 {
-    "Characters": {
-        "Jason": "A young man in his late twenties, with dark hair and a kind face.",
-        "True Love": "A mysterious woman, with auburn hair and a gentle smile.",
-        "Dog": "A small white terrier, with a wagging tail."
-    },
-    "Mood": "Romantic, Quirky, Hopeful",
-    "Scenes": [
+    "characters": [
         {
-            "Scene": "Opening Scene",
-            "Camera": "Wide shot of Berlin, with Jason walking in the foreground.",
-            "Plot": "Jason is walking through the streets of Berlin, looking for his true love. He is determined, but unsure of where to go."
+            "name": "Jason",
+            "visualDescription": "A young man with a mop of curly brown hair, a strong jawline, and bright blue eyes."
         },
         {
-            "Scene": "The Search",
-            "Camera": "Close-up of Jason's face, as he looks around in confusion.",
-            "Plot": "Jason continues to search for his true love, but is met with dead ends and confusion. He is becoming increasingly desperate."
+            "name": "Dog",
+            "visualDescription": "A small, white terrier with a black spot on its back."
+        }
+    ],
+    "mood": "Lighthearted, romantic, comedic",
+    "scenes": [
+        {
+            "scene": "Opening Scene",
+            "camera": "Wide shot of Berlin, showing the hustle and bustle of the city.",
+            "plot": "Jason is seen running through the streets of Berlin, desperately searching for something.",
+            "characters": ["Jason"]
         },
         {
-            "Scene": "The Rescue",
-            "Camera": "Medium shot of Jason, as he kneels down to pet a small white terrier.",
-            "Plot": "Jason finds a small white terrier, and takes him in. The dog becomes his loyal companion, and they form a strong bond."
+            "scene": "Train Station",
+            "camera": "Close up of Jason's face, looking around frantically.",
+            "plot": "Jason is at the train station, trying to buy a ticket to escape Berlin.",
+            "characters": ["Jason"]
         },
         {
-            "Scene": "The Ending",
-            "Camera": "Wide shot of Jason and the dog, walking away from Berlin.",
-            "Plot": "Though Jason never finds his true love, he finds solace in his new companion. The two of them walk away from Berlin, in search of a new life."
+            "scene": "On the Train",
+            "camera": "The camera follows the train as it moves through the countryside.",
+            "plot": "Jason is on the train, looking out the window, thinking about his true love.",
+            "characters": ["Jason"]
+        },
+        {
+            "scene": "Arrival at Destination",
+            "camera": "Wide shot of the small town, showing the quaintness of the place.",
+            "plot": "Jason arrives at his destination, but is disappointed to find that his true love is not there.",
+            "characters": ["Jason"]
+        },
+        {
+            "scene": "The Dog",
+            "camera": "Close up of the dog, showing its cute face.",
+            "plot": "Jason is walking through the town, when he finds a small, white terrier with a black spot on its back. The dog follows him, and they become fast friends.",
+            "characters": ["Jason", "Dog"]
+        },
+        {
+            "scene": "Ending Scene",
+            "camera": "Wide shot of Jason and the dog walking together, with the sun setting in the background.",
+            "plot": "Jason and the dog are walking together, content with each other's company. The camera pans out, showing the two of them walking off into the sunset.",
+            "characters": ["Jason", "Dog"]
         }
     ]
 }
