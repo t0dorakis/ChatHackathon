@@ -1,14 +1,14 @@
 const express = require("express");
 const axios = require("axios");
 require("dotenv").config();
-const { listEngines, generateImage } = require("./mw-open-ai");
+const { listEngines, generateImage, generateText } = require("./mw-open-ai");
 
 const app = express();
 
 app.use(express.json()); // middleware to parse JSON body
 
-app.post("/create-image", async (req, res) => {
-  console.log("post called", req.body);
+app.get("/create-image", async (req, res) => {
+  console.log("create-image request", req.body);
   try {
     const { prompt, pixel, number } = req.body;
     const response = await generateImage(prompt, pixel, number);
@@ -18,12 +18,16 @@ app.post("/create-image", async (req, res) => {
   }
 });
 
-// const getImage = async () => {
-//   const image = await generateImage();
-//   console.log(image);
-// };
-
-// getImage();
+app.get("/complete-text", async (req, res) => {
+  console.log("complete-text request", req.body);
+  try {
+    const { prompt } = req.body;
+    const response = await generateText(prompt);
+    res.send(response);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");

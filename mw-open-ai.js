@@ -33,23 +33,20 @@ const generateImage = async (
 
 const generateText = async (
   prompt = "a white siamese cat",
-  pixel = 256,
-  number = 1
 ) => {
   console.log("Generating text ...")
   try {
-    const response = await openai.generateText({
+    const response = await openai.createCompletion({
+      model: "text-davinci-002",
       prompt: prompt,
-      
-
-    )
-      ;
-    const image_url = response.data.data[0].url;
-    return image_url;
+      temperature: 1.0,
+      max_tokens: 100,
+    });
+    const text = response.data.choices[0].text;
+    return text;
   } catch (err) {
     console.log(err);
   }
 };
-
 
 module.exports = { listEngines, generateImage, generateText };
