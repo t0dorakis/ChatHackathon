@@ -18,8 +18,9 @@ Install dependencies:
 
 `yarn install`
 
-Now, from root folder:
+Now, from root folder start middleware and generator script:
 
+`node index.js`
 `node comic/comic.js`
 
 **Happy:** Find your comic files in `comic/result/`. Enjoy on a Raspery Pi with a screen.
