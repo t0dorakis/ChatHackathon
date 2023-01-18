@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 require("dotenv").config();
-const { listEngines, generateImage } = require("./imageGeneration");
+const { listEngines, generateImage } = require("./mw-open-ai");
 
 const app = express();
 

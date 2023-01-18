@@ -17,7 +17,7 @@ const generateImage = async (
   pixel = 256,
   number = 1
 ) => {
-  console.log("Generating image...")
+  console.log("Generating image ...")
   try {
     const response = await openai.createImage({
       prompt: prompt,
@@ -31,4 +31,25 @@ const generateImage = async (
   }
 };
 
-module.exports = { listEngines, generateImage };
+const generateText = async (
+  prompt = "a white siamese cat",
+  pixel = 256,
+  number = 1
+) => {
+  console.log("Generating text ...")
+  try {
+    const response = await openai.generateText({
+      prompt: prompt,
+      
+
+    )
+      ;
+    const image_url = response.data.data[0].url;
+    return image_url;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+
+module.exports = { listEngines, generateImage, generateText };
