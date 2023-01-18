@@ -22,6 +22,7 @@ Now, from root folder:
 
 `node comic/comic.js`
 
+**Happy:** Find your comic files in `comic/result/`. Enjoy on a Raspery Pi with a screen.
 
 ## Includes test calls
 Install the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
