@@ -1,0 +1,39 @@
+{
+    "characters": [
+        {
+        "name": "Sowet Citizen",
+        "visualDescription": "A person in urban clothing living in Sowet. Wears a suit and has an afro cap."
+        },
+        {
+        "name": "Dinosaur",
+        "visualDescription": "A large dinosaur with horns and a lizard-like tail"
+        }
+    ],
+    "mood": "Tense, Danger, Unexpected, Excitement",
+    "scenes": [
+        {
+            "scene": "Sowet City",
+            "camera": "A fixed panoramic view of Sowet City.",
+            "plot": "The calm and peaceful Sowet City in the 70s gets suddenly invaded by a giant dinosaur",
+            "characters": ["Sowet Citizen"]
+        },
+        {
+            "scene": "Dinosaur Invasion",
+            "camera": "A close-up of the dinosaur rampaging through the city.",
+            "plot": "The citizens of Sowet City panic as they try to flee from the giant creature.",
+            "characters": ["Sowet Citizen", "Dinosaur"]
+        },
+        {
+            "scene": "Escape",
+            "camera": "The camera follows a group of citizens as they climb up a ladder to the rooftop.",
+            "plot": "The group of citizens rush up to the top of a building in an attempt to escape from the dinosaur.",
+            "characters": ["Sowet Citizen"]
+        },
+        {
+            "scene": "Safe",
+            "camera": "The camera focuses on the group of citizens as they watch the dinosaur from the rooftop.",
+            "plot": "The group of citizens cheer as the dinosaur moves away from the city.",
+            "characters": ["Sowet Citizen"]
+        }
+    ]
+}
