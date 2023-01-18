@@ -14,6 +14,10 @@ OPENAI_API_KEY="<YOUR_API_KEY>"
 OPENAI_ORGANISATION="<YOUR_ORG_KEY>"
 ```
 
+Install dependencies:
+
+`yarn install`
+
 Now, from root folder:
 
 `node comic/comic.js`
