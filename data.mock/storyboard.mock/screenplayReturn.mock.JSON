@@ -1,0 +1,30 @@
+{
+    "Characters": {
+        "Jason": "A young man in his late twenties, with dark hair and a kind face.",
+        "True Love": "A mysterious woman, with auburn hair and a gentle smile.",
+        "Dog": "A small white terrier, with a wagging tail."
+    },
+    "Mood": "Romantic, Quirky, Hopeful",
+    "Scenes": [
+        {
+            "Scene": "Opening Scene",
+            "Camera": "Wide shot of Berlin, with Jason walking in the foreground.",
+            "Plot": "Jason is walking through the streets of Berlin, looking for his true love. He is determined, but unsure of where to go."
+        },
+        {
+            "Scene": "The Search",
+            "Camera": "Close-up of Jason's face, as he looks around in confusion.",
+            "Plot": "Jason continues to search for his true love, but is met with dead ends and confusion. He is becoming increasingly desperate."
+        },
+        {
+            "Scene": "The Rescue",
+            "Camera": "Medium shot of Jason, as he kneels down to pet a small white terrier.",
+            "Plot": "Jason finds a small white terrier, and takes him in. The dog becomes his loyal companion, and they form a strong bond."
+        },
+        {
+            "Scene": "The Ending",
+            "Camera": "Wide shot of Jason and the dog, walking away from Berlin.",
+            "Plot": "Though Jason never finds his true love, he finds solace in his new companion. The two of them walk away from Berlin, in search of a new life."
+        }
+    ]
+}
