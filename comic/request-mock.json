@@ -1,0 +1,14 @@
+{
+    "comic": [
+        {
+        "title": "the title",
+        "summary": "A cat and a spider walk towards Paris. 50ies comic style, handdrawn, black and white",
+        "description": "the scene text"
+        },
+        {
+            "title": "the title",
+            "summary": "A cat and a spider reach the Eiffel Tower and laugh. 50ies comic style black and white",
+            "description": "the scene text"
+        }
+    ]
+}
