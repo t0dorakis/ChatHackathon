@@ -1,4 +1,4 @@
-const { generateImage } = require("../imageGeneration");
+const { generateImage } = require("../mw-open-ai");
 
 const generateStoryBoard = async (screenPlayReturn) => {
   const characters = screenPlayReturn.characters;
@@ -41,6 +41,7 @@ const generateStoryBoard = async (screenPlayReturn) => {
         prompt: prompts[index],
       };
     });
+    console.log("enrichedResults", enrichedResults);
     return enrichedResults;
   } catch (err) {
     console.log(err);

@@ -1,9 +1,21 @@
 # run with CMD + Option + R
-POST http://localhost:3000/create-image HTTP/1.1
+
+###
+
+GET http://localhost:3000/create-image
 content-type: application/json
 
 {
     "prompt": "A cute cat eating pizza",
     "pixel": 256,
     "number": 1
+}
+
+###
+
+GET http://localhost:3000/complete-text
+content-type: application/json
+
+{
+    "prompt": "A story about a fish learing to walk"
 }
